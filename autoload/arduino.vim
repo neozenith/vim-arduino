@@ -56,7 +56,9 @@ function! arduino#InitializeConfig()
     let g:arduino_serial_port_globs = ['/dev/ttyACM*',
                                       \'/dev/ttyUSB*',
                                       \'/dev/tty.usbmodem*',
-                                      \'/dev/tty.usbserial*']
+                                      \'/dev/tty.usbserial*'
+                                      \'/dev/cu.usbmodem*'
+                                      \'/dev/cu.usbserial*']
   endif
 endfunction
 
