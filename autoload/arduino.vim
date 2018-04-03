@@ -486,7 +486,7 @@ endfunction
 " If lightline plugin configuration exists
 " And the default to enable it is > 0
 " Attempt to add the component which calls the status function
-if exists('g:lightline') && g:lightline
+if exists('g:lightline')
 	if exists('g:arduino_lightline') && g:arduino_lightline > 0
 		let g:lightline.active.right = add(g:lightline.active.right, ['arduino'])
 		let g:lightline.component_function.arduino = 'arduino#Status'
