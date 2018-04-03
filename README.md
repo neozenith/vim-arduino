@@ -6,17 +6,17 @@ interface](https://github.com/arduino/Arduino/blob/master/build/shared/manpage.a
 
 ## Installation
 
-vim-arduino works with [Pathogen](https://github.com/tpope/vim-pathogen).
+### [Vim Plug](https://github.com/junegunn/vim-plug)
+
+```vim
+Plug 'stevearc/vim-arduino
+```
+
+### [Pathogen](https://github.com/tpope/vim-pathogen).
 
 ```sh
 cd ~/.vim/bundle/
 git clone https://github.com/stevearc/vim-arduino
-```
-
-or [Vim Plug](https://github.com/junegunn/vim-plug)
-
-```vim
-Plug 'stevearc/vim-arduino
 ```
 
 You also need to download the [Arduino
@@ -83,7 +83,7 @@ setl statusline=%!MyStatusLine()
 
 ### Lightline
 
-If you are using the Vim Status line plugin [Lightline](https://github.com/itchyny/lightline.vim)
+If you are using the Vim status line plugin [Lightline](https://github.com/itchyny/lightline.vim)
 this plugin will automatically attempt to detect Lightline's presence and add
 the component.
 
