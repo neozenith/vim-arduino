@@ -13,11 +13,19 @@ cd ~/.vim/bundle/
 git clone https://github.com/stevearc/vim-arduino
 ```
 
+or [Vim Plug](https://github.com/junegunn/vim-plug)
+
+```vim
+Plug 'stevearc/vim-arduino
+```
+
 You also need to download the [Arduino
 IDE](https://www.arduino.cc/en/Main/Software) (version 1.5 or newer) and make
 sure the `arduino` command is in your PATH.
 
 ## Configuration
+
+### Commands
 
 The docs have detailed information about configuring vim-arduino:
 https://github.com/stevearc/vim-arduino/blob/master/doc/arduino.txt
@@ -32,6 +40,8 @@ The main commands you will want to use are:
 * `:ArduinoSerial` - Connect to the board for debugging over a serial port.
 * `:ArduinoUploadAndSerial` - Build, upload, and connect for debugging.
 
+### Key Mappings
+
 To make easy use of these, you may want to bind them to a key combination. You
 can put the following in `.vim/ftplugin/arduino.vim`:
 
@@ -42,6 +52,8 @@ nnoremap <buffer> <leader>ad :ArduinoUploadAndSerial<CR>
 nnoremap <buffer> <leader>ab :ArduinoChooseBoard<CR>
 nnoremap <buffer> <leader>ap :ArduinoChooseProgrammer<CR>
 ```
+
+### Status Line
 
 If you want to add the board type to your status line, it's easy with the
 following:
@@ -68,6 +80,11 @@ function! MyStatusLine()
 endfunction
 setl statusline=%!MyStatusLine()
 ```
+
+### Lightline
+
+If you are using the Vim Status line plugin [Lightline](https://github.com/itchyny/lightline.vim)
+you may want to add the following:
 
 
 ## License

@@ -464,4 +464,24 @@ function! arduino#ctrlp_Callback(mode, str)
   call call(s:ctrlp_callback, [a:str])
 endfunction
 
+" Lightline extension {{{1
+" Lightline status bar
+" https://github.com/itchyny/lightline.vim
+function! arduino#Status()
+	let line = ''
+	if (exists('g:loaded_arduino_autoload') && g:loaded_arduino_autoload)
+		let port = arduino#GetPort()
+		let line = '[' . g:arduino_board . '] [' . g:arduino_programmer . ']'
+		if !empty(port)
+			let line = line . ' (' . port . ':' . g:arduino_serial_baud . ')'
+		endif
+	endif
+  return line
+endfunction
+
+
+add(g:lightline.active.right, ['arduino'])
+let g:lightline.component_function.arduino = 'arduino#Status'
+
+
 " vim:fen:fdm=marker:fmr={{{,}}}:fdl=0:fdc=1
