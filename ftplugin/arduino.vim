@@ -24,3 +24,10 @@ command! -buffer -bar ArduinoUpload call arduino#Upload()
 command! -buffer -bar ArduinoSerial call arduino#Serial()
 command! -buffer -bar ArduinoUploadAndSerial call arduino#UploadAndSerial()
 command! -buffer -bar -nargs=? ArduinoChoosePort call arduino#ChoosePort(<f-args>)
+
+" Default Keymappings
+" nnoremap <buffer> <leader>am :ArduinoVerify<CR>
+" nnoremap <buffer> <leader>au :ArduinoUpload<CR>
+" nnoremap <buffer> <leader>ad :ArduinoUploadAndSerial<CR>
+" nnoremap <buffer> <leader>ab :ArduinoChooseBoard<CR>
+" nnoremap <buffer> <leader>ap :ArduinoChooseProgrammer<CR>

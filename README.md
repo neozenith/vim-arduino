@@ -84,7 +84,14 @@ setl statusline=%!MyStatusLine()
 ### Lightline
 
 If you are using the Vim Status line plugin [Lightline](https://github.com/itchyny/lightline.vim)
-you may want to add the following:
+this plugin will automatically attempt to detect Lightline's presence and add
+the component.
+
+You can deactivate it with:
+
+```vim
+let g:arduino_lightline = 0
+```
 
 
 ## License
