@@ -24,7 +24,6 @@ command! -buffer -bar ArduinoUpload call arduino#Upload()
 command! -buffer -bar ArduinoSerial call arduino#Serial()
 command! -buffer -bar ArduinoUploadAndSerial call arduino#UploadAndSerial()
 command! -buffer -bar -nargs=? ArduinoChoosePort call arduino#ChoosePort(<f-args>)
-command! -buffer -bar ArduinoStatus call arduino#Status()
 
 " If lightline plugin configuration exists
 " And the default to enable it is > 0
