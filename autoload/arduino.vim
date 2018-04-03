@@ -53,6 +53,10 @@ function! arduino#InitializeConfig()
   endif
 
   if !exists('g:arduino_serial_port_globs')
+
+    " https://stackoverflow.com/questions/8632586/macos-whats-the-difference-between-dev-tty-and-dev-cu
+    " tty devices are historically call-IN devices
+    " cu devices are (c)alling (u)nits for call-OUT
     let g:arduino_serial_port_globs = ['/dev/ttyACM*',
                                       \'/dev/ttyUSB*',
                                       \'/dev/tty.usbmodem*',
