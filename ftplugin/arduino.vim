@@ -24,6 +24,17 @@ command! -buffer -bar ArduinoUpload call arduino#Upload()
 command! -buffer -bar ArduinoSerial call arduino#Serial()
 command! -buffer -bar ArduinoUploadAndSerial call arduino#UploadAndSerial()
 command! -buffer -bar -nargs=? ArduinoChoosePort call arduino#ChoosePort(<f-args>)
+command! -buffer -bar ArduinoStatus call arduino#Status()
+
+" If lightline plugin configuration exists
+" And the default to enable it is > 0
+" Attempt to add the component which calls the status function
+if exists('g:lightline')
+	if exists('g:arduino_lightline') && g:arduino_lightline > 0
+		let g:lightline.active.right = add(g:lightline.active.right, ['arduino'])
+		let g:lightline.component_function.arduino = 'arduino#Status'
+	endif
+endif
 
 " Default Keymappings
 " nnoremap <buffer> <leader>am :ArduinoVerify<CR>

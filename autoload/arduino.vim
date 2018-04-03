@@ -471,6 +471,7 @@ endfunction
 
 " Lightline status bar
 " https://github.com/itchyny/lightline.vim
+" See ftplugin/arduino.vim for code that adds this component
 function! arduino#Status()
 	let line = ''
 	if (exists('g:loaded_arduino_autoload') && g:loaded_arduino_autoload)
@@ -483,15 +484,6 @@ function! arduino#Status()
   return line
 endfunction
 
-" If lightline plugin configuration exists
-" And the default to enable it is > 0
-" Attempt to add the component which calls the status function
-if exists('g:lightline')
-	if exists('g:arduino_lightline') && g:arduino_lightline > 0
-		let g:lightline.active.right = add(g:lightline.active.right, ['arduino'])
-		let g:lightline.component_function.arduino = 'arduino#Status'
-	endif
-endif
 
 
 " vim:fen:fdm=marker:fmr={{{,}}}:fdl=0:fdc=1
