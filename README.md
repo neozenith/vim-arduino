@@ -1,4 +1,11 @@
 # vim-arduino
+
+<img 
+	src="image/vim-arduino-logo.svg" 
+	alt="Vim Arduino Logo" 
+	align="right" 
+	width="50%" />
+
 Vim plugin for compiling, uploading, and debugging arduino sketches. 
 
 It makes use of the Arduino IDE's [commandline interface](https://github.com/arduino/Arduino/blob/master/build/shared/manpage.adoc)
