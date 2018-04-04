@@ -1,7 +1,7 @@
 # vim-arduino
 
 <img 
-	src="image/vim-arduino-logo.svg" 
+	src="images/vim-arduino-logo.svg" 
 	alt="Vim Arduino Logo" 
 	align="right" 
 	width="50%" />
