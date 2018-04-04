@@ -22,6 +22,7 @@ It makes use of the Arduino IDE's [commandline interface](https://github.com/ard
 ```vim
 Plug 'stevearc/vim-arduino'
 ```
+[See documentation](https://github.com/junegunn/vim-plug#example) for full use of Vim Plug.
 
 ### [Pathogen](https://github.com/tpope/vim-pathogen).
 
