@@ -5,18 +5,26 @@
 	viewport="0 0 720 490"
    >
 	 
+	 <!-- Vim 'V' -->
+	 <g transform="translate(283,23)">
+		 <g transform="scale(3,3)"  
+			 stroke-opacity="0.7">
+			<line x1="0" y1="100" x2="0" y2="0" stroke="#333" stroke-width="23" stroke-linecap="round" />
+			<line x1="0" y1="100" x2="100" y2="0" stroke="#333" stroke-width="23" stroke-linecap="round" />
+		</g>
+	</g>
 
   <g
-     id="loop"
-     stroke-opacity="50%"
+     id="arduino-logo"
      stroke-width="60"
-     stroke="rgb(0, 151, 156)"
-     fill="none">
+		 stroke="rgb(0, 151, 156)"
+		 stroke-opacity="0.5"
+		 fill="none"
+		 transform="translate(0,0)"
+		 >
     <path
        d=" M 174 30  a 10.50 10.10 0 0 0 0 280  c 190 10 170 -280 370 -280  a 10.50 10.10 0 0 1 0 280  c -190 10 -170 -280 -370 -280 "
        id="loop-path" />
-	</g>
-
   <g
      id="plus"
      transform="translate(0,10)"
@@ -38,5 +46,8 @@
          style="stroke-width:23.61903381"
          id="minus-path" />
 			 </g>
+		 </g>
 	</g>
+
+
 </svg>
