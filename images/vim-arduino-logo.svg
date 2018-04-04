@@ -3,6 +3,8 @@
   xmlns:xlink="http://www.w3.org/1999/xlink"
   version="1.1" 
 	viewport="0 0 720 490"
+	width="720px"
+	height="490px"
    >
 	 
 	 <!-- Vim 'V' -->
