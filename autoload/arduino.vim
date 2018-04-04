@@ -59,10 +59,9 @@ function! arduino#InitializeConfig()
     " cu devices are (c)alling (u)nits for call-OUT
     let g:arduino_serial_port_globs = ['/dev/ttyACM*',
                                       \'/dev/ttyUSB*',
-                                      \'/dev/tty.usbmodem*',
-                                      \'/dev/tty.usbserial*'
-                                      \'/dev/cu.usbmodem*'
-                                      \'/dev/cu.usbserial*']
+																		  \'/dev/tty.*',
+																		  \'/dev/cu.*'
+																			\]
   endif
   if !exists('g:arduino_lightline')
 		let g:arduino_lightline = 1
