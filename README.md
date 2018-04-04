@@ -4,7 +4,7 @@
 	src="images/vim-arduino-logo.svg" 
 	alt="Vim Arduino Logo" 
 	align="right" 
-	width="50%" />
+	width="384px" />
 
 Vim plugin for compiling, uploading, and debugging arduino sketches. 
 
